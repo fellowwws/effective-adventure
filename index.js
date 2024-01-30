@@ -9,7 +9,7 @@ Papa.parse(input, {
     skipEmptyLines: true,
     complete: (results, file) => {
         results.data.forEach((row) => {
-            QRCode.toFile(`./output/${row.Label}.png`, row.Resource, {});
+            QRCode.toFile(`./output/${row.Label}.png`, row.Resource);
         })
     }
 });

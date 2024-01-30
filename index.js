@@ -1,6 +1,6 @@
 import fs from "fs";
 import Papa from 'papaparse';
-import QRCode from 'qrcode'
+import QRCode from 'qrcode';
 
 const input = fs.createReadStream("./input/A.csv");
 
